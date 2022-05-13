@@ -1,0 +1,7 @@
+{
+  "name": "Rap Batle",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
