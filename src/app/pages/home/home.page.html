@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Início</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="navigateTo('profile')">
+                <ion-icon slot="icon-only" name="person"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+    <ion-list>
+        <ion-list-header>
+            <ion-label>
+                <p>Arraste para baixo</p>
+                <h2>Para atualizar</h2>
+            </ion-label>
+            <ion-button>
+                <ion-icon slot="icon-only" name="arrow-down"></ion-icon>
+            </ion-button>
+        </ion-list-header>
+        <ion-card *ngFor="let item of [].constructor(10)">
+            <ion-img [src]="'assets/img/icon.png'"></ion-img>
+            <ion-card-header>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                <ion-card-title>Card Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+                Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean...
+            </ion-card-content>
+            <ion-item>
+                <ion-button fill="clear" shape="round" slot="start">
+                    <ion-icon slot="start" name="mic"></ion-icon>
+                    221
+                </ion-button>
+                <ion-button fill="clear" shape="round" slot="end">
+                    <ion-icon slot="start" name="eye"></ion-icon>
+                    239
+                </ion-button>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+</ion-content>
