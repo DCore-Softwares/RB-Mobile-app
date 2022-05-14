@@ -14,3 +14,7 @@ After finish buld and install dependencies run this command:
 
 ``ionic serve``
 
+## Author
+
+@Domingos-Masta
+@Eufraniodiogo
